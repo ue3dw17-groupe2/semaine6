@@ -1,0 +1,16 @@
+.search-result {
+  height: auto;
+  .search-result_cover {
+    margin-right: 10px;
+  }
+
+  .search-result_summary {
+    //overflow: hidden;
+  }
+}
+
+.mat-list {
+  .mat-list-item.search-result {
+    height: auto;
+  }
+}

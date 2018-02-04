@@ -1,0 +1,9 @@
+<form fxLayout="row" fxLayoutAlign="center center" (keydown.enter)="$event.preventDefault()">
+  <mat-form-field fxFlex="70" fxFlex.lg="40">
+    <input matInput placeholder="Search a game..."
+      #searchBox (keyup)="search(searchBox.value)">
+  </mat-form-field>
+  <button mat-icon-button (click)="reset()">
+    <mat-icon>delete</mat-icon>
+  </button>
+</form>

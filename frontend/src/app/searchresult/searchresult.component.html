@@ -1,0 +1,12 @@
+<mat-list>
+ <mat-list-item class="search-result"
+  *ngFor="let game of igdbService.currentResult | async"
+  (click)="showDetails(game)"
+  fxLayout="row" fxLayoutAlign="start start" >
+   <img class="search-result_cover" [src]="game?.cover?.url" alt="Photo of {{game.name}}" fxFlex="10">
+   <div fxFlex fxLayout="column">
+     <h3 fxFlex>{{game.name}}</h3>
+     <p fxFlex class="search-result_summary">{{game.summary | slice:0:60}}</p>
+   </div>
+ </mat-list-item>
+</mat-list>
